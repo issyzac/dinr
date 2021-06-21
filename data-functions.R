@@ -37,8 +37,19 @@ is.matrix(sample_csv_matrix) # Confirming if data is a matrix or not after conve
 a <- matrix(1, 2, 3) # Create simple matrix
 is.matrix(a) # Confirm its a matrix
 b <- as.data.frame(a) # Convert it to a data frame
+b
 is.data.frame(b) # Confirm its a data frame
 
+# Transpose the data (matrix)
+t(a) # This will transpose from a 3X2 matrix to a 2X3 matrix
+
+# Delete add a row/column in the data
+a <- a[-1, ] # First value inside [] os a row number and the second is a column number (-ve) value deletes the row
+a
+a <- rbind(a, c(2, 2, 2))
+a
+a <- cbind(a, c(3, 3))
+a
 
 
 
