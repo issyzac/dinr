@@ -30,4 +30,17 @@ length(which(sample_text$X28.Day==1)) # How many data points we have that have a
 is.matrix(sample_text) # This will let us know if the data we are working with is a matrix. TRUE/FALSE
 is.data.frame(sample_text) # Likewise with this we will know if the data we are working with is a data frame. Returns TRUE/FALSE
 
+## Manipulating the data
+sample_csv_matrix <- as.matrix(sample_text) # This will convert from other data representations to a matrix representation
+is.matrix(sample_csv_matrix) # Confirming if data is a matrix or not after converting
+
+a <- matrix(1, 2, 3) # Create simple matrix
+is.matrix(a) # Confirm its a matrix
+b <- as.data.frame(a) # Convert it to a data frame
+is.data.frame(b) # Confirm its a data frame
+
+
+
+
+
 
