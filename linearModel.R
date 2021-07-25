@@ -8,3 +8,9 @@ bodymass <- c(82, 49, 53, 112, 47, 69, 77, 71, 62, 78)
 # make the linear model
 fit <- lm(bodymass~height) #Y ~ X
 
+class(fit) # Check if the class of our object fit is actually linear model
+
+summary(fit) # Gives us the summary of our linear model
+
+names(fit)
+
