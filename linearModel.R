@@ -14,3 +14,8 @@ summary(fit) # Gives us the summary of our linear model
 
 names(fit)
 
+#plotting the linear model
+plot(height, bodymass)
+
+
+abline(fit, col="red")
